@@ -2,7 +2,7 @@
 """function async that generate number random"""
 
 
-import async
+import asyncio
 import random
 
 
