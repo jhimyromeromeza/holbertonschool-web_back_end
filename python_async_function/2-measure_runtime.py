@@ -6,7 +6,7 @@ import time
 from concurrent_coroutines import wait_n
 
 
-def measure_time(n: int, max_delay: int) -> float:
+async def measure_time(n: int, max_delay: int) -> float:
     """return total of time """
     start_time = time.time()
     await wait_n(n, max_delay)
