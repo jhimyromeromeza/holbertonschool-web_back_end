@@ -3,7 +3,7 @@
 
 
 import asyncio
-from 0-basic_async_syntax import wait_random
+from basic_async_syntax import wait_random
 from typing import List
 
 
