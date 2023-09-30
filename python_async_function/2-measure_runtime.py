@@ -3,7 +3,7 @@
 
 
 import time
-import concurrent_coroutines import wait_n
+from concurrent_coroutines import wait_n
 
 
 def measure_time(n: int, max_delay: int) -> float:
