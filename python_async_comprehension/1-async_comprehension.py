@@ -4,7 +4,7 @@
 
 from async_generator import async_generator
 import asyncio
-import List
+from typing import List
 
 
 async def async_comprehension() -> List[float]:
