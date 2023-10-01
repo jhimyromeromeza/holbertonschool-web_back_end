@@ -2,7 +2,7 @@
 """function"""
 
 
-import async_generator import async_generator
+from async_generator import async_generator
 import asyncio
 import List
 
