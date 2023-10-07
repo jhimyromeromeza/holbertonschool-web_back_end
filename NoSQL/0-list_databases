@@ -1,0 +1,3 @@
+#!/bin/bash
+#conectar a mongo db y listar todas las bases de datos
+echo "show dbs"| mongo --quiet
