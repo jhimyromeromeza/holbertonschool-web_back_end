@@ -1,3 +1,2 @@
-//creta script that list date base
-#!/usr/bin/env python3
-echo 'show dbs'| mongo --quiet
+// list all databases
+show dbs
