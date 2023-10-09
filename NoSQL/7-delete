@@ -1,0 +1,2 @@
+// script that delete all the document in colection school
+db.school.deleteMany({"name": "Holberton school"})
