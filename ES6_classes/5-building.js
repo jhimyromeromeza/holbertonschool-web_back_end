@@ -1,4 +1,4 @@
-class Building {
+export default class Building {
     constructor(sqft) {
         if (this.constructor === Building) {
             throw new Error('No puedes instanciar la clase abstracta!');
