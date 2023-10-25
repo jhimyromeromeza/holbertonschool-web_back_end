@@ -12,6 +12,6 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
     .then((value) => {
       result.push({ status: 'fulfilled', value});
     })
-    .catch((error) => result.push({status: 'rejected', value: error.toString() }))
+    .catch((error) => result.push({status: 'rejected', value: error.toString() }));
   return result;
 }
