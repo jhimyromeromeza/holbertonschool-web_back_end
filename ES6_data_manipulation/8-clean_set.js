@@ -1,14 +1,13 @@
 export default function cleanSet(set, startString) {
-  if (startString === '') {
-    return '';
-  }
+  if (typeof set !== 'object') return '';
+  if (typeof startString !== 'string') return '';
+  if (startString.length === 0) return '';
 
-  let result = '';
-  for (const item of set) {
-    if (item.startsWith(startString)) {
-      result += `${item.slice(startString.length)}-`;
+  const tmp = [];
+  set.forEach((element) => {
+    if (element && element.startsWith(startString)) {
+      tmp.push(element.replace(startString, ''));
     }
-  }
-
-  return result.slice(0, -1); // Elimina el último guión
+  });
+  return tmp.join('-');
 }
